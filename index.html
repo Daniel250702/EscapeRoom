@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Hello World</title>
+    <label for="code-input">Gib den Code ein:</label>
+    <input type="text" id="code-input">
+    <button onclick="pruefeCode()">Überprüfen</button>
+
+<script>
+    function pruefeCode() {
+        const codeInput = document.getElementById("code-input").value;
+
+        if (codeInput === "123") {
+          window.open("richtiger-code.html");
+        } else {
+          alert("Der Code ist falsch!");
+        }
+      }
+  </script>
+
+</head>
+<body>
+    
+</body>
+</html>
